@@ -33,9 +33,9 @@ checkHTMLdir <- function(dir,
                          subdir = TRUE,
                          extension = TRUE,
                          ...) {
-  if (missing(dir)) {
-    dir <- tk_choose.dir()
-  }
+  # if (missing(dir)) {
+  #   dir <- tk_choose.dir()
+  # }
   
   if (extension == TRUE) {
     pat = ".html|.htm"
@@ -74,8 +74,8 @@ checkHTMLdir <- function(dir,
 checkHTML <- function(files,
                       ...)
 {
-  if (missing(files))
-    files <- tk_choose.files()
+  # if (missing(files))
+  #   files <- tk_choose.files()
   
   txts <-  sapply(files, getHTML)
   names(txts) <- gsub(".html", "", basename(files))
