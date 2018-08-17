@@ -54,7 +54,7 @@ statcheck <-
         names(x) <-  1:length(x)
       
       message("Extracting statistics...")
-      pb <- txtProgressBar(max = length(x), style = 3)
+      # pb <- txtProgressBar(max = length(x), style = 3)
       for (i in 1:length(x)) {
         txt <- x[i]
         
@@ -932,9 +932,9 @@ statcheck <-
           }
         }
         
-        setTxtProgressBar(pb, i)
+        # setTxtProgressBar(pb, i)
       }
-      close(pb)
+      # close(pb)
       Source <- NULL
       Res <- ddply(Res, .(Source), function(x)
         x[order(x$Location), ])
