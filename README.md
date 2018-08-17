@@ -1,7 +1,7 @@
 # statcheck
 
-[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/statcheck)](https://cran.r-project.org/package=statcheck)
-
+This is a version of statcheck that will work rpy2. Only the statcheck function has been tested. 
+	
 ## What is statcheck?
 
 `statcheck` is a free, open source R package that can be used to automatically extract statistical null-hypothesis significant testing (NHST) results from articles and recompute the *p*-values based on the reported test statistic and degrees of freedom to detect possible inconsistencies. 
