@@ -1388,7 +1388,8 @@ statcheck <-
         if (nrow(Res) > 0) {
           return(Res)
         } else {
-          Res <- cat("statcheck did not find any results\n")
+#          Res <- cat("statcheck did not find any results\n")
+          return(c())
         }
         
       } else {
